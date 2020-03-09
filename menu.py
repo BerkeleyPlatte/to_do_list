@@ -1,5 +1,5 @@
 import sys
-from notebook import Notebook, Note
+from notebook import Notebook, Task
 
 
 class Menu:
@@ -16,10 +16,10 @@ class Menu:
     def display_menu(self):
         print("""
               Notebook Menu 
-                1. Show all Notes 
-                2. Search Notes 
-                3. Add Note 
-                4. Modify Note 
+                1. Show List 
+                2. Search Tasks 
+                3. Add Task 
+                4. Modify Task 
                 5. Quit 
                 """)
 

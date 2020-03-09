@@ -3,7 +3,7 @@ import datetime
 last_id = 0
 
 
-class Note:
+class Task:
 
     def __init__(self, memo, tags=''):
         self.memo = memo
@@ -23,7 +23,7 @@ class Notebook:
         self.notes = []
 
     def new_note(self, memo, tags=''):
-        self.notes.append(Note(memo, tags))
+        self.notes.append(Task(memo, tags))
 
     def modify_memo(self, note_id, memo):
         note = self._find_note(note_id)
